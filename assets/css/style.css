@@ -225,3 +225,16 @@ form button {
 form button:hover {
     background: var(--cambridge-blue);
 }
+
+#mapa{
+  width: 480px;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#endereco > p{
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 600;
+  line-height: 10px;
+}
