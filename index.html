@@ -20,7 +20,7 @@
     <header>
 
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
@@ -38,13 +38,13 @@
                     <!-- Marcadores não ordenados + links -->
                     <ul id="menu">
                         <li>
-                            <a href="index.html"> Home </a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="projetos.html"> Projetos </a>
+                            <a href="projetos.html">Projetos</a>
                         </li>
                         <li>
-                            <a href="contato.html"> Contato </a>
+                            <a href="contato.html">Contato</a>
                         </li>
                     </ul>
 
@@ -58,16 +58,16 @@
     <main>
 
         <!-- Seção Sobre você -->
-        <section id="about">
+        <section id="about" class="flex-start">
 
             <!-- Título da Seção -->
             <h2>Sobre a Lari</h2>
 
             <!-- Conteúdo da Seção -->
-            <div id="conteudo">
+            <div id="conteudo" class="flex">
 
                 <!-- Imagem do criador do conteúdo -->
-                <img src="https://avatars.githubusercontent.com/u/211871862?v=4" alt="Foto do criador desse conteudo" />
+                <img src="https://avatars.githubusercontent.com/u/211871862?v=4" alt="Foto do criador desse conteudo" class="img_profile" />
 
                 <!-- Texto sobre o criador do conteúdo -->
                 <article id="sobre_texto">
@@ -89,18 +89,14 @@
         </section>
 
         <!-- Seção contendo um vídeo de sua preferência -->
-        <section id="video">
+        <section id="video" class="flex-start">
 
             <!-- Título da Seção -->
             <h2>Meu vídeo favorito:</h2>
 
             <!-- Vídeo da Seção -->
-            <div class="youtube">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GCdwKhTtNNw?si=hs8iigEFNp8SqJWp"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+            <div id="youtube" class="flex">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wVblAg1hMJQ?si=uuD9LOgd1GrA4x_a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
         </section>
@@ -108,7 +104,7 @@
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
+    <footer class="flex">
 
         <!-- Seção de Contato - Redes Sociais-->
         <section id="redes_sociais">

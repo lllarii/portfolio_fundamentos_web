@@ -59,3 +59,57 @@ p{
   text-align: justify;
   padding: 0.5rem 0;
 }
+
+/* Definindo as configurações das classes de elemento Flexbox */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_start{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header_content{
+  height: 80px;
+  position: sticky; /*opção sticky, que cria o efeito do conteúdo da página passando por baixo da Seção Header ao rolar página. */
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--lapis-lazuli);
+  border-bottom: var(--cerulean);
+}
+
+#menu li{
+  display: inline;
+  padding: 1rem;
+}
+
+#menu li a{
+  text-decoration: none;
+  color: var(--lavender-web);
+  font-size: 20px;
+}
+
+#menu li a:hover{
+  color: var(--old-rose);
+  text-decoration: underline;
+}
+
+#about{
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+#conteudo{
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.img_profile{
+  width: 200px;
+}
