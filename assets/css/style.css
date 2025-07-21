@@ -19,6 +19,7 @@
 
   --ash-gray: #b1b6a6ff;
   --pearl: #eae0ccff;
+
 }
 
 html {
@@ -112,12 +113,25 @@ p{
 
 .img_profile{
   width: 200px;
+  border-radius: 50%;
+  border-style: double;
+  border-color: var(--pearl);
+  border-width: thick;
 }
 
 #video{
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
+}
+
+#youtube{
+  border-style: double;
+  border-color: var(--pearl);
+}
+
+#video h2{
+  text-align: center;
 }
 
 footer{
