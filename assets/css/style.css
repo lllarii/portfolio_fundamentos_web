@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+
+/* Para criarmos todas as variáveis com escopo global, declaramos todas elas dentro do seletor :root. O seletor :root corresponde ao elemento raiz do documento. */
+:root {
+  --lapis-lazuli: #065a82ff;
+  --black: #000000ff;
+  --old-rose: #cb8589ff;
+  --lavender-web: #eeeeffff;
+  --cerulean: #1c7293ff;
+
+  --ash-gray: #b1b6a6ff;
+  --pearl: #eae0ccff;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background: var(--ash-gray);
+  color: var(--black);
+}
+
