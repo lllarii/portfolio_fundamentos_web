@@ -11,11 +11,11 @@
 
 /* Para criarmos todas as variáveis com escopo global, declaramos todas elas dentro do seletor :root. O seletor :root corresponde ao elemento raiz do documento. */
 :root {
-  --lapis-lazuli: #065a82ff;
+  --cambridge-blue: #84a98cff;
   --black: #000000ff;
   --old-rose: #cb8589ff;
   --lavender-web: #eeeeffff;
-  --cerulean: #1c7293ff;
+  --hookers-green: #52796f;
 
   --ash-gray: #b1b6a6ff;
   --pearl: #eae0ccff;
@@ -47,7 +47,7 @@ h2{
 
 h3{
   padding: 1rem;
-  color: var(--lavender-web);
+  color: var(--black);
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
@@ -79,8 +79,8 @@ p{
   width: 100%;
   justify-content: space-between;
   padding: 24px;
-  background-color: var(--lapis-lazuli);
-  border-bottom: var(--cerulean);
+  background-color: var(--hookers-green);
+  border-bottom: var(--cambridge-blue);
 }
 
 #menu li{
@@ -118,4 +118,37 @@ p{
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
+}
+
+footer{
+  flex-direction: column;
+  margin: 0;
+  padding: 2rem;
+  color: var(--lavender-web);
+  background-color:var(--cambridge-blue);
+  font-weight: bold;
+  text-align: center;
+}
+
+#redes_sociais {
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 1rem 0 0 0;
+    width: 320px;
+}
+
+.social_icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.social_icon:hover {  
+    filter: brightness(0) 
+            saturate(100%) 
+            invert(42%) 
+            sepia(34%) 
+            saturate(288%) 
+            hue-rotate(115deg) 
+            brightness(97%) 
+            contrast(95%);
 }
