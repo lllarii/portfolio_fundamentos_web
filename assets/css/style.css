@@ -238,3 +238,34 @@ form button:hover {
   font-weight: 600;
   line-height: 10px;
 }
+
+/*estilização da página de projetos */
+
+#post1{
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+#titulo1 > a {
+  text-align:initial;
+  margin-bottom: 2rem;
+  display: block;
+  padding-left: 1rem;
+  color: var(--hookers-green)
+}
+
+#titulo1 > a:hover{
+  color: var(--old-rose);
+  text-decoration: underline;
+}
+
+#titulo1 > h2 {
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+#videotexto{
+  flex-direction: row;
+  gap: 2rem;
+
+}
