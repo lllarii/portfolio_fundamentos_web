@@ -32,13 +32,13 @@ body {
   color: var(--black);
 }
 
-h1{
+h1 {
   color: var(--lavender-web);
   font-size: 2rem;
   font-weight: 700;
 }
 
-h2{
+h2 {
   padding: 1rem;
   color: var(--black);
   font-size: 1.5rem;
@@ -46,7 +46,7 @@ h2{
   text-align: left;
 }
 
-h3{
+h3 {
   padding: 1rem;
   color: var(--black);
   font-size: 1.25rem;
@@ -54,7 +54,7 @@ h3{
   text-align: center;
 }
 
-p{
+p {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
@@ -68,14 +68,15 @@ p{
   align-items: center;
 }
 
-.flex_start{
+.flex_start {
   display: flex;
   justify-content: flex-start;
 }
 
-#header_content{
+#header_content {
   height: 80px;
-  position: sticky; /*opção sticky, que cria o efeito do conteúdo da página passando por baixo da Seção Header ao rolar página. */
+  position: sticky;
+  /*opção sticky, que cria o efeito do conteúdo da página passando por baixo da Seção Header ao rolar página. */
   top: 0;
   width: 100%;
   justify-content: space-between;
@@ -84,34 +85,34 @@ p{
   border-bottom: var(--cambridge-blue);
 }
 
-#menu li{
+#menu li {
   display: inline;
   padding: 1rem;
 }
 
-#menu li a{
+#menu li a {
   text-decoration: none;
   color: var(--lavender-web);
   font-size: 20px;
 }
 
-#menu li a:hover{
+#menu li a:hover {
   color: var(--old-rose);
   text-decoration: underline;
 }
 
-#about{
+#about {
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
 }
 
-#conteudo{
+#conteudo {
   flex-direction: row;
   gap: 2rem;
 }
 
-.img_profile{
+.img_profile {
   width: 200px;
   border-radius: 50%;
   border-style: double;
@@ -119,62 +120,66 @@ p{
   border-width: thick;
 }
 
-#video{
+#video {
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
 }
 
-#youtube{
-  border-style: double;
-  border-color: var(--pearl);
-}
-
-#video h2{
+#video h2 {
   text-align: center;
 }
 
-footer{
+#youtube {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+#youtube .youtube-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 5px double;
+  border-style: double;
+  border-color: var(--pearl);
+  padding: 0px;
+
+}
+
+footer {
   flex-direction: column;
   margin: 0;
   padding: 2rem;
   color: var(--lavender-web);
-  background-color:var(--cambridge-blue);
+  background-color: var(--cambridge-blue);
   font-weight: bold;
   text-align: center;
+
 }
 
 #redes_sociais {
-    display: flex;
-    justify-content: space-evenly; 
-    margin: 1rem 0 0 0;
-    width: 320px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0 0 0;
+  width: 320px;
 }
 
 .social_icon {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
-.social_icon:hover {  
-    filter: brightness(0) 
-            saturate(100%) 
-            invert(42%) 
-            sepia(34%) 
-            saturate(288%) 
-            hue-rotate(115deg) 
-            brightness(97%) 
-            contrast(95%);
+.social_icon:hover {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(34%) saturate(288%) hue-rotate(115deg) brightness(97%) contrast(95%);
 }
 
 /*Estilização da Página de Contato*/
 
-#contact{
+#contact {
   flex-direction: row;
   gap: 2rem;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   width: 480px;
@@ -184,55 +189,55 @@ form{
 }
 
 form label {
-    font-size: 1rem;
-    text-align: left;
-    font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 500;
 }
 
 form input,
 textarea {
-    margin: 0.5rem 0 1rem;
-    padding: 0.5rem;
-    border-radius: 1.25rem;
-    border: none;
-    width: 100%;
-    font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
 }
 
 textarea {
-    resize: none;
-    height: 5rem;
+  resize: none;
+  height: 5rem;
 }
 
-form span{
-    margin: 0 0 0.5rem 0.75rem;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    color: red;
+form span {
+  margin: 0 0 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: red;
 }
 
 form button {
-    text-align: center;
-    padding: 0.75rem 2rem;
-    background: var(--hookers-green);
-    border: 1px solid var(--cambridge-blue);
-    color: var(--lavender-web);
-    border-radius: 0.75rem;
-    font-weight: 700;
-    font-size: 1rem;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background: var(--hookers-green);
+  border: 1px solid var(--cambridge-blue);
+  color: var(--lavender-web);
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 form button:hover {
-    background: var(--cambridge-blue);
+  background: var(--cambridge-blue);
 }
 
-#mapa{
+#mapa {
   width: 480px;
   flex-direction: column;
   gap: 3rem;
 }
 
-#endereco > p{
+#endereco>p {
   font-size: 1rem;
   text-align: justify;
   font-weight: 600;
@@ -241,31 +246,72 @@ form button:hover {
 
 /*estilização da página de projetos */
 
-#post1{
-  flex-direction: column;
-  margin: 2rem auto;
-  width: 90%;
+#projetosmain{
+  min-height: 65vh; /*delimita altura mínima, não trava com '=' */
 }
 
-#titulo1 > a {
-  text-align:initial;
+#post1 {
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 80%;
+  border-color: var(--old-rose);
+  border-style: dashed;
+  border-radius: 20px;
+}
+
+#titulo1 {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo1>a {
+  text-align: initial;
   margin-bottom: 2rem;
   display: block;
   padding-left: 1rem;
-  color: var(--hookers-green)
+  color: var(--hookers-green);
+  font-weight: 700;
 }
 
-#titulo1 > a:hover{
+#titulo1>a:hover {
   color: var(--old-rose);
   text-decoration: underline;
 }
 
-#titulo1 > h2 {
+#titulo1>h2 {
   text-align: left;
   padding-bottom: 0.5rem;
 }
-#videotexto{
+
+#videotexto {
+  display: flex;
   flex-direction: row;
   gap: 2rem;
-
+  padding: 0rem 1rem;
+  align-content: end;
+  align-items: center;
 }
+
+
+
+#videotexto .video1 {
+    width: 50%;
+    aspect-ratio: 16/9;
+}
+
+/*responsividade */
+
+/* @mediaa para css identificar o dispositivo que está carregando conteúdo */
+
+/* @media screen and (max-width: 1000px) {
+  body {
+    background-color: var(--black);
+  }
+}
+@media speech pra leitor de tela
+se vai usar so tamanho nao precisa do screen, ja representa tudo */
+
+/* aqui, numa tela com até 1000px, faz tal coisa */
+/*estrutura é essa, agr tem que mudar as coisas certas pra ficar responsivo; disposição de elementos, tamanho e tal */
