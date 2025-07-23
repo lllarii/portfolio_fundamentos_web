@@ -46,18 +46,32 @@
   </header>
 
   <!-- Seção Principal da Página (main) -->
-  <main id="projetosmain">
+  <main id="projetosmain" class="flex">
+
+    <nav id="barralateral">
+      <!-- Marcadores não ordenados + links -->
+
+      <h4>Índice</h4>
+      <ul>
+        <li>
+          <a href="#post1">CRUD para e-commerce</a>
+        </li>
+        <li>
+          <a href="#post2">Sistema de Operações Financeiras</a>
+        </li>
+        <li>
+          <a href="#post3">Sistema CRM</a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- Seção para mostrar projetos -->
     <section id="projetos" class="flex-start">
 
-
-      <!-- Seção do Google Maps -->
       <div id="post1">
 
-
-        <article id="videotexto">
-          <div id="titulo1">
+        <article class="videotexto">
+          <div class="titulo1">
 
             <h2>CRUD para e-commerce:</h2>
 
@@ -68,11 +82,68 @@
               ouvido e caixas de som. Ideal para praticar POO (Programação Orientada a Objetos), arquitetura em camadas
               (MVC) e menus interativos com validações inteligentes.</p>
           </div>
-          
+
           <iframe class="video1" src="https://www.youtube.com/embed/tBUNKSCr5Qg?si=4_QlXeKL7Agd-LuG"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </article>
+
+      </div>
+
+      <div id="post2">
+
+        <article class="videotexto">
+          <div class="titulo1">
+
+            <h2>Sistema de Operações Financeiras:</h2>
+
+            <a href="https://github.com/lllarii/conta_bancaria" target="_blank">Veja o código completo! </a>
+
+            <p>Sistema de operações que simula um sistema bancário via terminal. Ele permite que o
+              usuário realize operações como criação de contas, consulta de saldo, depósitos, saques e transferências
+              entre contas. Todas as ações são executadas em tempo real, utilizando dados locais. A lógica garante
+              validações de saldo e limites em transações, com mensagens informativas sobre os processos para o usuário.
+              A navegação ocorre por meio de um menu interativo em linha de comando. Sua
+              estrutura modular de código facilita tanto o entendimento quanto futuras extensões da aplicação para
+              versões mais robustas. O sistema foi desenvolvido em TypeScript com base nos
+              princípios de programação orientada a objetos.</p>
+
+          </div>
+
+          <img src="https://ik.imagekit.io/acervo/print%20metodos%20bancarios%20-%20Copia.PNG?updatedAt=1753229402688"
+            alt="Print do terminal do sistema de métodos bancários" class="img_post" />
+
+        </article>
+
+      </div>
+
+      <div id="post3">
+
+        <article class="videotexto">
+          <div class="titulo1">
+
+            <h2>Sistema CRM:</h2>
+
+            <a href="https://github.com/Grupo-03-Turma-JavaScript-07/genCRM/tree/main" target="_blank">Veja o código
+              completo! </a>
+
+            <p>O sistema é uma aplicação back-end desenvolvida em TypeScript com o framework NestJS, utilizando o
+              TypeORM para integração com um banco de dados relacional MySQL. Voltado para o gerenciamento de serviços
+              em um ambiente CRM, o sistema implementa operações completas de CRUD por meio de uma arquitetura em
+              camadas que separa lógica de negócio, acesso a dados e controle de rotas. Além dos métodos tradicionais de
+              criação, atualozação, consulta e exclusão, o também oferece funcionalidades personalizadas, como filtro,
+              mudança de status e aplicação de desconto. A segurança da aplicação é garantida por meio
+              de autenticação baseada em JWT, assegurando que apenas usuários
+              verificados possam acessar determinados recursos. O ambiente de testes utilizado foi o Insomnia, que
+              permitiu simular requisições HTTP e validar os endpoints da API. Com essas tecnologias e práticas, o
+              sistema oferece uma estrutura robusta, segura e facilmente escalável, adequada para aplicações
+              empresariais que demandam controle e confiabilidade. Esta API Rest foi desenvolvida em grupo.</p>
+          </div>
+
+          <img src="https://ik.imagekit.io/acervo/print%20teste%20gen%20%20crm.PNG?updatedAt=1753230979029"
+            alt="Print de teste do sistema genCRM" class="img_post" />
 
         </article>
 

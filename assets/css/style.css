@@ -250,23 +250,14 @@ form button:hover {
   min-height: 65vh; /*delimita altura mínima, não trava com '=' */
 }
 
-#post1 {
-  flex-direction: column;
-  margin: 2rem auto;
-  width: 80%;
-  border-color: var(--old-rose);
-  border-style: dashed;
-  border-radius: 20px;
-}
-
-#titulo1 {
+.titulo1 {
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#titulo1>a {
+.titulo1>a {
   text-align: initial;
   margin-bottom: 2rem;
   display: block;
@@ -275,30 +266,88 @@ form button:hover {
   font-weight: 700;
 }
 
-#titulo1>a:hover {
+.titulo1>a:hover {
   color: var(--old-rose);
   text-decoration: underline;
 }
 
-#titulo1>h2 {
+.titulo1>h2 {
   text-align: left;
   padding-bottom: 0.5rem;
 }
 
-#videotexto {
+.videotexto {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   padding: 0rem 1rem;
-  align-content: end;
   align-items: center;
+
+  margin: 2rem auto;
+  width: 90%;
+  border-color: var(--old-rose);
+  border-style: dashed;
+  border-radius: 20px;
+}
+
+.videotexto .video1 {
+    width: 50%;
+    aspect-ratio: 16/9;
+    padding: 10px 1px;
+    border-radius: 25px;
+}
+
+.img_post{
+  padding: 10px 1px;
+  border-radius: 25px;
+}
+
+#barralateral {
+  display:inline-block;
+  position:sticky;
+  left: 0;
+  top: 20px;
+  background-color: var(--cambridge-blue);
+  width: 120%;
+  height: 100%;
+  margin: 10% 0 10%;
+  border: 1px dashed var(--hookers-green);
+  border-left: 0;
+  align-self:normal;
+
+  padding: 1rem;
+  padding-left: 0.5rem;
+}
+
+#barralateral h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--hookers-green);
+  filter: contrast(15);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#barralateral ul {
+  list-style-type:none;
+  justify-content: end;
+}
+
+#barralateral ul li {
+  margin-bottom: 20px;
 }
 
 
+#barralateral ul li a {
+  text-decoration: none;
+  color: var(--pearl);
+  font-weight: 500;
+}
 
-#videotexto .video1 {
-    width: 50%;
-    aspect-ratio: 16/9;
+#barralateral ul li a:hover {
+  color: var(--hookers-green);
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 /*responsividade */
