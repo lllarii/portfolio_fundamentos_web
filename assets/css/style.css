@@ -246,8 +246,9 @@ form button:hover {
 
 /*estilização da página de projetos */
 
-#projetosmain{
-  min-height: 65vh; /*delimita altura mínima, não trava com '=' */
+#projetosmain {
+  min-height: 65vh;
+  /*delimita altura mínima, não trava com '=' */
 }
 
 .titulo1 {
@@ -295,20 +296,20 @@ form button:hover {
 }
 
 .videotexto .video1 {
-    width: 50%;
-    aspect-ratio: 16/9;
-    padding: 10px 1px;
-    border-radius: 25px;
+  width: 50%;
+  aspect-ratio: 16/9;
+  padding: 10px 1px;
+  border-radius: 25px;
 }
 
-.img_post{
+.img_post {
   padding: 10px 1px;
   border-radius: 25px;
 }
 
 #barralateral {
-  display:inline-block;
-  position:sticky;
+  display: inline-block;
+  position: sticky;
   left: 0;
   top: 20px;
   background-color: var(--cambridge-blue);
@@ -318,7 +319,7 @@ form button:hover {
   border-radius: 10px;
   box-shadow: 2px 8px 30px var(--hookers-green);
 
-  align-self:normal;
+  align-self: normal;
 
   padding: 1rem;
   padding-left: 0.5rem;
@@ -333,7 +334,7 @@ form button:hover {
 }
 
 #barralateral ul {
-  list-style-type:none;
+  list-style-type: none;
   justify-content: end;
 }
 
