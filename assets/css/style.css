@@ -311,8 +311,9 @@ form button:hover {
   width: 120%;
   height: 100%;
   margin: 10% 0 10%;
-  border: 1px dashed var(--hookers-green);
-  border-left: 0;
+  border-radius: 10px;
+  box-shadow: 2px 8px 30px var(--hookers-green);
+
   align-self:normal;
 
   padding: 1rem;
@@ -322,8 +323,7 @@ form button:hover {
 #barralateral h4 {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--hookers-green);
-  filter: contrast(15);
+  color: #243631;
   padding-bottom: 20px;
   text-align: center;
 }
