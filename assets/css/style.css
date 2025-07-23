@@ -13,7 +13,7 @@
 :root {
   --cambridge-blue: #84a98cff;
   --black: #000000ff;
-  --old-rose: #cb8589ff;
+  --old-rose: #cb8589;
   --lavender-web: #eeeeffff;
   --hookers-green: #52796f;
 
@@ -282,12 +282,16 @@ form button:hover {
   gap: 2rem;
   padding: 0rem 1rem;
   align-items: center;
+  background-color: rgba(203, 133, 136, 0.062);
 
   margin: 2rem auto;
   width: 90%;
-  border-color: var(--old-rose);
+  border-color: #cb8588b2;
   border-style: dashed;
   border-radius: 20px;
+
+  box-shadow: 1px 1px 8px var(--hookers-green);
+
 }
 
 .videotexto .video1 {
