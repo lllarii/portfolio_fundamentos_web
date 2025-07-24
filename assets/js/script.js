@@ -1,5 +1,19 @@
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+const titulotopo = document.getElementById("titulo");
+const apelidos = ["Lari", "Lalá", "Teixeira", "Larissa Teixeira"];
+titulotopo.style.color = "var(--lavender-web)";
+titulotopo.style.fontSize = "2rem";
+titulotopo.style.fontWeight = "700";
+
+let i = 0;
+
+setInterval(() => {
+  titulotopo.innerText = apelidos[i];
+  i = (i + 1) % apelidos.length; // volta pro início quando acabar
+}, 3000);
+
+
 formulario.addEventListener('submit', function (event) {
 
   event.preventDefault();
@@ -47,3 +61,19 @@ formulario.addEventListener('submit', function (event) {
   campoMessage.value = ''
 
 });
+
+/*
+  for (let i = 0; i < apelidos.length; i++) {
+    const element = apelidos[i];
+
+    setTimeout(() => {
+      titulotopo.innerText = element
+
+    }, i * 4000)
+   }
+Ideia com for funciona, mas não repete infinitamente;e adicionar looping com while sobrecarrega o navegador.
+melhor opção é usar o método setInterval para repetir apenas o trecho continuamente */
+
+
+
+
