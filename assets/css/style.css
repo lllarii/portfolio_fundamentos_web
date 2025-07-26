@@ -34,16 +34,18 @@ body {
 
 h1 {
   color: var(--lavender-web);
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  font-family: Times, serif;
 }
 
 h2 {
   padding: 1rem;
   color: var(--black);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 600;
   text-align: left;
+  font-family: Times, serif;
 }
 
 h3 {
@@ -52,13 +54,15 @@ h3 {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
+  font-family: Helvetica, sans-serif
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   text-align: justify;
   padding: 0.5rem 0;
+  font-family: Helvetica, sans-serif
 }
 
 /* Definindo as configurações das classes de elemento Flexbox */
@@ -93,7 +97,8 @@ p {
 #menu li a {
   text-decoration: none;
   color: var(--lavender-web);
-  font-size: 20px;
+  font-size: 25px;
+  font-family: Times, serif;
 }
 
 #menu li a:hover {
@@ -192,6 +197,7 @@ form label {
   font-size: 1rem;
   text-align: left;
   font-weight: 500;
+  font-family: Helvetica, sans-serif;
 }
 
 form input,
@@ -202,6 +208,7 @@ textarea {
   border: none;
   width: 100%;
   font-size: 1rem;
+  font-family: Helvetica, sans-serif;
 }
 
 textarea {
@@ -225,6 +232,7 @@ form button {
   border-radius: 0.75rem;
   font-weight: 700;
   font-size: 1rem;
+  font-family: Helvetica, sans-serif;
 }
 
 form button:hover {
@@ -242,6 +250,7 @@ form button:hover {
   text-align: justify;
   font-weight: 600;
   line-height: 10px;
+  font-family: Helvetica, sans-serif;
 }
 
 /*estilização da página de projetos */
@@ -265,6 +274,8 @@ form button:hover {
   padding-left: 1rem;
   color: var(--hookers-green);
   font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
 
 .titulo1>a:hover {
@@ -326,11 +337,12 @@ form button:hover {
 }
 
 #barralateral h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #243631;
   padding-bottom: 20px;
   text-align: center;
+  font-family: Times, serif;
 }
 
 #barralateral ul {
@@ -347,6 +359,7 @@ form button:hover {
   text-decoration: none;
   color: var(--pearl);
   font-weight: 500;
+  font-family: Helvetica, sans-serif;
 }
 
 #barralateral ul li a:hover {
@@ -357,14 +370,14 @@ form button:hover {
 
 /*responsividade */
 
-/* @mediaa para css identificar o dispositivo que está carregando conteúdo */
+/* @media para css identificar o dispositivo que está carregando conteúdo */
 
-/* @media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 600px) {
   body {
     background-color: var(--black);
   }
 }
-@media speech pra leitor de tela
+/*@media speech pra leitor de tela
 se vai usar so tamanho nao precisa do screen, ja representa tudo */
 
 /* aqui, numa tela com até 1000px, faz tal coisa */

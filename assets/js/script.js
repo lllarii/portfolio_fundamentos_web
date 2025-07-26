@@ -3,8 +3,9 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const titulotopo = document.getElementById("titulo");
 const apelidos = ["Lari", "Lalá", "Teixeira", "Larissa Teixeira"];
 titulotopo.style.color = "var(--lavender-web)";
-titulotopo.style.fontSize = "2rem";
+titulotopo.style.fontSize = "2.8rem";
 titulotopo.style.fontWeight = "700";
+titulotopo.style.fontFamily = "Times";
 
 let i = 0;
 
@@ -23,6 +24,7 @@ formulario.addEventListener('submit', function (event) {
 
   if (campoNome.value.length < 3) {
     txtNome.innerHTML = 'O nome deve ter no mínimo 3 caracteres.';
+    campoNome.style.borderBottom = "2px solid red";
     campoNome.focus();
     return;
   } else {
@@ -34,6 +36,7 @@ formulario.addEventListener('submit', function (event) {
 
   if (!campoEmail.value.match(emailRegex)) {
     txtEmail.innerHTML = 'Digite um E-mail válido.';
+    campoEmail.style.borderBottom = "2px solid red";
     campoEmail.focus();
     return;
   } else {
@@ -45,6 +48,7 @@ formulario.addEventListener('submit', function (event) {
 
   if (campoSubject.value.length < 5) {
     txtSubject.innerHTML = 'O Assunto deve ter no minimo 5 caracteres.';
+    campoSubject.style.borderBottom = "2px solid red";
     campoSubject.focus();
     return;
   } else {
